@@ -1,4 +1,4 @@
-'''                 S H A N T A N U   K A U S H I K                 '''
+/*                 S H A N T A N U   K A U S H I K                 */
 //                  S H A N T A N U   K A U S H I K                 //
 
 #include <bits/stdc++.h>
@@ -11,19 +11,18 @@ using namespace std;
 #define pll pair<ll, ll>
 #define pii pair<int, int>
 #define pss pair<string, string>
-#define vec vector
 #define fs first
 #define ss second
 #define vi vector<int>
 #define vc vector<char>
+#define vs vector<string>
 #define vb vector<bl>
 #define vll vector<ll>
 #define vvi vector<vi>
 #define vvll vector<vll>
 #define vvb vector<vb>
-#define vvs vector<vector<string>>
 #define vvc vector<vc>
-#define vs vector<string>
+#define vvs vector<vs>
 #define pb push_back
 #define eb emplace_back
 #define ppb pop_back
@@ -56,7 +55,7 @@ bool isprime(ll n)
     if (n % 2 == 0)
         return false;
 
-    for (ll i = 3; i <= n / i; i += 2)
+    for (ll i = 3; i * i <= n; i += 2)
         if (n % i == 0)
             return false;
 
@@ -68,9 +67,9 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll t__;
-    cin >> t__;
-    while (t__--)
+    ll test_cases;
+    cin >> test_cases;
+    while (test_cases)
     {
     }
     return 0;
