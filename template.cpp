@@ -38,6 +38,7 @@ using namespace std;
 #define lr(i, s, e) for (ll i = s; i <= e; i++)
 #define rl(i, e, s) for (ll i = e; i >= s; i--)
 #define each(i, x) for (auto &i : x)
+#define read(x) for (auto &i : x) cin >> i
 #define all(p) begin(p), end(p)
 #define rev(p) sort(rbegin(p), rend(p))
 #define out(x) cout << x << endl
@@ -69,7 +70,7 @@ int main()
 
     ll test_cases;
     cin >> test_cases;
-    while (test_cases)
+    while (test_cases--)
     {
     }
     return 0;
