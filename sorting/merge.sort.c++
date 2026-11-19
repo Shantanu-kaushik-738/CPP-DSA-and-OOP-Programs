@@ -46,7 +46,6 @@ public:
         int mid = st + (end - st) / 2;
         if (st < end)
         {
-
             mergeSort(nums, st, mid);      // left half
             mergeSort(nums, mid + 1, end); // right half
 
@@ -70,7 +69,7 @@ int main()
     }
 
     Solution sol;
-    vector<int> sort = sol.mergeSort(vec, st, n);
+    vector<int> sort = sol.mergeSort(vec, st, n - 1);
 
     for (auto v : sort)
     {
